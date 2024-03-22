@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formulario Bolivia</title>
+</head>
+<body>
+
+<h1>Formulario sobre Bolivia</h1>
+
+<form id="formulario">
+    <p>1. ¿Cuál es la capital de Bolivia?</p>
+    <input type="text" id="pregunta1" required>
+
+    <p>2. ¿Cuál es el lago más grande de Bolivia?</p>
+    <select id="pregunta2">
+        <option value="1">Titicaca</option>
+        <option value="2">Poopó</option>
+        <option value="3">Uru Uru</option>
+    </select>
+
+    <p>3. ¿Cuál de las siguientes ciudades es la capital administrativa de Bolivia?</p>
+    <input type="radio" id="pregunta3a" name="pregunta3" value="La Paz">
+    <label for="pregunta3a">La Paz</label><br>
+    <input type="radio" id="pregunta3b" name="pregunta3" value="Sucre">
+    <label for="pregunta3b">Sucre</label><br>
+    <input type="radio" id="pregunta3c" name="pregunta3" value="Santa Cruz">
+    <label for="pregunta3c">Santa Cruz</label><br>
+
+    <p>4. ¿Cuál es la montaña más alta de Bolivia?</p>
+    <input type="number" id="pregunta4" required>
+
+    <p>5. ¿Cuál es la danza más representativa de Bolivia?</p>
+    <input type="text" id="pregunta5" required>
+
+    <p>6. ¿En qué año se fundó la República de Bolivia?</p>
+    <input type="date" id="pregunta6" required>
+
+    <p>7. ¿Cuál es la comida típica boliviana hecha de carne de llama?</p>
+    <input type="text" id="pregunta7" required>
+
+    <p>8. ¿Qué porcentaje de la población boliviana es indígena?</p>
+    <input type="range" id="pregunta8" min="0" max="100" value="50" required>
+    <span id="porcentaje"></span>
+
+    <p>9. ¿Cuál es el deporte más popular en Bolivia?</p>
+    <input type="text" id="pregunta9" required>
+
+    <p>10. ¿Cuál es la fecha de la independencia de Bolivia?</p>
+    <input type="datetime-local" id="pregunta10" required>
+
+    <br>
+    <button type="submit">Enviar respuestas</button>
+</form>
+
+<script src="./java.js"></script>
+
+</body>
+</html>
