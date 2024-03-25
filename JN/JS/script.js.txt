@@ -1,0 +1,20 @@
+function Suma(A,B){
+    return A+B
+}
+function tiponumero(A){
+    if(A% 2==0){
+        document.writeln("par")
+        console.log("par")
+    }
+    else{
+        document.writeln("impar")
+        console.log("impar")
+    } 
+}
+function mifuncion(){
+    console.log(".f3..")
+    let varA = Number(document.getElementById("varA").value)
+    let varB = Number(document.getElementById("varB").value)
+    let varC=document.getElementById("result")
+    varC.textContent=Suma(varA,varB )
+}
