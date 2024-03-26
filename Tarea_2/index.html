@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+</head>
+<body>
+    <h1><center>Cuestionario</center></h1>
+    <label>1-QUE AÑO SE CREO BOLIVIA</label>
+    <br>
+    <input type="radio" name="p1" value="5">1826
+    <input type="radio" name="p1"value="0">1804
+    <input type="radio" name="p1"value="0">1001
+
+    <br>
+    <label>2-COMPLTE LA SIGUI. FRACE</label>
+    <p>mas sabe el<input type="text" id="p2">por viejo q por </p>
+
+    <br>
+    <label>3-SUMA</label>
+    <p>17 + 80 =<input type="number" id="P3"><br></p>
+
+    <label>4-Que pais es de latino america</label>
+    <select name="" id="p4">
+        <option value="opcion_incorrecta">EE.UU.</option>
+        <option value="opcion_incorrecta">CANADA</option>
+        <option value="opcion_correcta">BOLIVIA</option>
+        <option value="opcion_incorrecta">JAPON</option>
+    </select><br>
+
+    <label>5-Cual no pertenece </label><br>
+    <br>
+    <input type="checkbox" name="p5" value="0">GUITARRA<br>
+    <input type="checkbox"name="p5" value="0">TROMPETA<br>
+    <input type="checkbox" name="p5" value="5">CUERDA<br>
+    <input type="checkbox"name="p5" value="0">TAMBOR<br>
+    <input type="checkbox"name="p5" value="0">XILOFONO<br>
+
+    <label>5-Que Fecha es el dia de la muejer </label><br>
+    <br>
+    <input type="date" name="p6" value="08/03/2024"><br>
+
+    <label>7-caul es un mamifero</label>
+    <br>
+    <input type="radio" name="p7" value="0">delfin
+    <input type="radio" name="p7"value="0">pato
+    <input type="radio" name="p7"value="5">ornitorinco
+
+    <br>
+
+
+    <label>8-pepito tiene 5 manzanazas ,rosario le da 2 y mateo le quita 1 ;el resto de manzana pepito las divide entre sus 3 hermanos ,cuantas manzanas tuvieron cada hermano</label>
+    <br>
+    <input type="radio" name="p8" value="0">1
+    <input type="radio" name="p8"value="5">2
+    <input type="radio" name="p8"value="0">3
+    <input type="radio" name="p8"value="0">ninguna
+    <br>
+
+    <label>9-quien dijo "rendirme yo que se rinda su abuela" </label><br>
+    <br>
+    <input type="checkbox" name="p9" value="0">Juansito pinto<br>
+    <input type="checkbox"name="p9" value="0">bartolina siza<br>
+    <input type="checkbox" name="p9" value="5">Eduardo Avaroa<br>
+    <input type="checkbox"name="p9" value="0">Luis Sanchez <br>
+
+    <label>10-Cual es el valor valor de pi</label>
+    <br>
+    <input type="radio" name="p10" value="0">3.158
+    <input type="radio" name="p10"value="5">3.14
+    <input type="radio" name="p10"value="0">525
+    <input type="radio" name="p10"value="0">2*2
+    <br>
+    
+
+
+
+    <button onclick="calcular()">enviar</button>
+
+
+    <label id="result"></label>
+    <script src="scrip.js"></script>
+</body>
+</html>
