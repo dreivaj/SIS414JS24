@@ -1,0 +1,66 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>FORMULARIO</legend>
+        <label>1.- ¿En qué año se fundó Bolivia?</label><br>
+        <input type="radio" name="p1" value="5"> 1826 <br>
+        <input type="radio" name="p1" value="0"> 1820 <br>
+        <input type="radio" name="p1" value="0"> 1888 <br><br>
+        
+        <script src="./index.js"></script>
+        <label>2.-Complete la siguiente frase:</label>
+        <p>Mas sabe el <input type="text"> por viejo que por diablo.</p>
+        <br>
+    
+        <label>3.- Seleccione la capital de Bolivia:</label><br>
+        <select id="capital">
+            <option value="0">La Paz</option>
+            <option value="0">Cochabamba</option>
+            <option value="5">Sucre</option>
+         </select><br><br>
+         
+        <label>4.- ¿Cuáles de los siguientes no son colores?</label><br>
+        <input type="checkbox" id="color1"> Gato <br>
+        <input type="checkbox" id="color2"> Rojo <br>
+        <input type="checkbox" id="color3"> Verde <br>
+        <input type="checkbox" id="color4"> Cielo <br><br>
+    
+        <label>5.- ¿El Lago Titicaca se encuentra en Bolivia?</label><br>
+        <input type="radio" name="p12" value="5"> Sí<br>
+        <input type="radio" name="p12" value="0"> No<br><br>
+    
+        <label for="respuesta">6.- ¿Cuál es la raíz cuadrada de 16?</label><br>
+        <input type="text" id="respuesta"><br><br>
+    
+        <label>7.- ¿Quién fue el primer hombre en viajar al espacio?</label><br>
+        <input type="radio" id="yuri_gagarin" name="respuesta" value="yuri gagarin">
+        <label for="yuri_gagarin">Yuri Gagarin</label><br>
+        <input type="radio" id="neil_armstrong" name="respuesta" value="neil armstrong">
+        <label for="neil_armstrong">Neil Armstrong</label><br>
+        <input type="radio" id="buzz_aldrin" name="respuesta" value="buzz aldrin">
+        <label for="buzz_aldrin">Buzz Aldrin</label><br><br>
+     
+        <label>8.- ¿Quién escribió 'Don Quijote de la Mancha'?</label><br>
+        <input type="radio" name="p8" value="5"> Miguel de Cervantes<br>
+        <input type="radio" name="p8" value="0"> Gabriel García Márquez<br>
+        <input type="radio" name="p8" value="0"> William Shakespeare<br><br>
+
+        <label>9.- ¿Cuál es el océano más grande del mundo?</label><br>
+        <input type="radio" name="p9" value="0"> Océano Atlántico<br>
+        <input type="radio" name="p9" value="0"> Océano Índico<br>
+        <input type="radio" name="p9" value="5"> Océano Pacífico<br><br>
+
+        <label>10.- ¿que idioma es de Brasil?</label><br>
+        <input type="radio" name="p10" value="0"> Ingles<br>
+        <input type="radio" name="p10" value="5"> Portugués<br>
+        <input type="radio" name="p10" value="0"> Español<br><br>
+    </fieldset><br>
+    <button onclick="calcular()">Enviar</button> <br>
+    <label id="result"></label>
+</body>
+</html>
