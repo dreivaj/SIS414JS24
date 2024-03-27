@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cuestonario</title>
-  <link rel="stylesheet" href="index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suma de Dos Números</title>
 </head>
 <body>
-  <div class="quiz-container">
-    <h2 class="titleC">Cuestonario de Cultura General de Bolivia</h2>
-    <div class="titleL" id="question"></div>
-    <form id="choices"></form>
-    <button id="submit">Enviar respuesta</button>
-    <p id="result"></p>
-  </div>
 
-  <script src="app.js"></script>
+<h2>Suma de Dos Números</h2>
+
+<form id="sumaForm">
+    <label for="num1">Número 1:</label>
+    <input type="number" id="num1" name="num1" required><br><br>
+    
+    <label for="num2">Número 2:</label>
+    <input type="number" id="num2" name="num2" required><br><br>
+    
+    <button id="calcularBtn">Calcular Suma</button>
+</form>
+
+<div id="resultado"></div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
