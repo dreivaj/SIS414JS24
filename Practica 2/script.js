@@ -6,7 +6,7 @@ function calcular(){
         if(element.checked == true){
             result = result + Number(element.value)
         }
-    });
+    })
 
     let p2 = document.getElementById("p2").value
     if(p2 == "diablo"){
@@ -32,7 +32,7 @@ function calcular(){
         if(element.checked == true){
             result = result + Number(element.value)
         }
-    });
+    })
 
     let seleccion6 = document.getElementById("p6")
     let p6 = seleccion6.value
@@ -58,7 +58,7 @@ function calcular(){
         if(element.checked == true){
             result = result + Number(element.value)
         }
-    });
+    })
 
     let seleccion10 = document.getElementById("p10")
     let p10 = seleccion10.value
