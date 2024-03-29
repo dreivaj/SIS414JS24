@@ -43,6 +43,15 @@ function Calcular() {
         result += parseInt(p7.value);
     }
 
+    // Pregunta 8
+    const miembros = document.querySelectorAll('input[type="checkbox"]');
+    const nomiembros = ['Peru', 'Japon', 'Colombia', 'Europa'];
+
+    miembros.forEach(miembro => {
+        if (miembro.checked && nomiembros.includes(miembro.nextSibling.textContent.trim())) {
+            result = result + 10
+        }
+    });
     // Pregunta 9
     const p9 = document.querySelector('input[name="p9"]:checked');
     if (p9 !== null) {
