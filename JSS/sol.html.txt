@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>10 preguntas de cultura general</h1>
+    <label>PR1 Que año se fundo Bolivia</label>
+    <br>
+    <input type="radio" name="p1" value="5"> 1826 <br>
+    <input type="radio" name="p1" value="0"> 2024 <br>
+    <input type="radio" name="p1" value="0"> 1724 <br>
+    <br>
+    <label> Completa la siguiente frase</label>
+    <p>Mas sabe el <input type="text" id="p2">por viejo que por diablo</p>
+    <label>PR2 Seleccione la capital de Bolivia</label>
+    <br>
+    <select  name="p3" id="p3">
+        <option    value="la paz">La Paz</option>
+        <option    value="cochabamba">Cochabamba</option>
+        <option     value="sucre">Sucre</option>
+    </select>
+    <br>
+    <label>PR4 Cuando es el dia de la mujer en Bolivia</label>
+    <br>
+          <input type="checkbox" id="p4" name="p4" value="5" >8 de marzo <br>
+          <input type="checkbox" id="p4" name="p4"value="0">9 de abril <br>
+          <input type="checkbox" id="p4"name="p4" value="0">10 de enero<br>
+    <label>PR5 Cuando es el dia el Padre</label> 
+    <br>
+    <input type="radio" name="p5" value="5">19 de marzo  <br>
+    <input type="radio" name="p5" value="0"> 14 de abril <br>
+    <input type="radio" name="p5" value="0"> 9 de agosto <br>
+    <br>
+    <label>PR6 Cuando se descubrio america</label>
+    <br>
+          <input type="checkbox" id="6" name="p6"  value="0">1482 <br>
+          <input type="checkbox" id="6" name="p6" value="5">1492 <br>
+          <input type="checkbox" id="6" name="p6" value="0">1502 <br>
+    <br>
+    <label>PR7  Que valor tiene pi</label>
+    <br>
+    <input type="radio" name="p7" value="0">4.4152  <br>
+    <input type="radio" name="p7" value="5">3.1416 <br>
+    <input type="radio" name="p7" value="0">3.4316<br>
+    <br>
+    <label>PR8 Cuantos planetas tiene el sitema solar </label>
+    <br>
+    <select  name="p8" id="p8">
+      <option    value="11">11</option>
+      <option    value="9">9</option>
+      <option    value="8">8</option>
+    </select>
+    <br>
+    <label>PR9 Como se llama el hombre que piso la luna </label>
+    <br>
+          <input type="checkbox" id="p9" name="p9" value="0">Buzz Aldrin<br>
+          <input type="checkbox" id="p9"  name="p9" value="5">Neil Armstrong <br>
+          <input type="checkbox" id="p9" name="p9" value="0">Michael Collions<br>
+    <br>
+    <label>PR10 Cual es la gravedad de la tierra</label>
+    <br>
+    <input type="radio" name="p10" value="5"> 9.807m/s² <br>
+    <input type="radio" name="p10" value="0"> 3.498m/s² <br>
+    <input type="radio" name="p10" value="0">9.704m/s²<br>
+    <br>
+    <button onclick="calcular()">enviar</button>
+    <label  id="result"></label>
+    <script src="js/estrella.js"></script>
+</body>
+</html>
