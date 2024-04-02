@@ -22,7 +22,7 @@ function Calcular() {
     let c3 = document.getElementById("c3").checked;
     let c4 = document.getElementById("c4").checked;
 
-    if (!c1 && !c2 && !c3 && c4) {
+    if (c1) {
         result += 5;
     }
 
