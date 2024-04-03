@@ -13,7 +13,7 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         pregunta1: document.getElementById('pregunta1').value,
         pregunta2: document.getElementById('pregunta2').value,
         pregunta3: document.querySelector('input[name="pregunta3"]:checked').value,
-        pregunta4: document.getElementById('pregunta4').value,
+        pregunta4: document.getElementById('pregunta4').options[document.getElementById('pregunta4').selectedIndex].text,
         pregunta5: document.getElementById('pregunta5').value,
         pregunta6: document.getElementById('pregunta6').value,
         pregunta7: document.getElementById('pregunta7').value,
