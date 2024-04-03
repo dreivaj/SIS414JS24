@@ -2,7 +2,6 @@
 function suma(a, b) {
     return a + b;
 }
-
 function TipoNumero(a) {
     if (a % 2 == 0) {
         return "par";
@@ -10,7 +9,6 @@ function TipoNumero(a) {
         return "impar";
     }
 }
-
 function mifuncion() {
     let varA = Number(document.getElementById("varA").value);
     let varB = Number(document.getElementById("varB").value);
