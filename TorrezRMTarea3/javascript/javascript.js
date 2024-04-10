@@ -85,6 +85,14 @@ document.addEventListener("DOMContentLoaded", function() {
         // Crear un nuevo usuario
         postData(rowData);
     });
-    // Llamar a la función para obtener la lista de usuarios y mostrarla en la tabla
     getUsers();
+});
+let btnLimpiar = document.getElementById("limpiar");
+btnLimpiar.addEventListener('click', () => {
+    document.getElementById("ru").value = "";
+    document.getElementById("ci").value = "";
+    document.getElementById("nCompleto").value = "";
+    document.getElementById("save").style.display = "inline-block";
+    document.getElementById("update").style.display = "none";
+    document.getElementById("userForm").reset(); 
 });
