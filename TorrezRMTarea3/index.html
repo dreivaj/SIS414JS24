@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="ru">Ru</label><br>
+        <input type="text" name="ru" id="ru"><br>
+        <label for="ci">Ci</label><br>
+        <input type="text" name="ci" id="ci"><br>
+        <label for="nCompleto">Nombre Completo</label><br>
+        <input type="text" name="nCompleto" id="nCompleto"><br>
+        <button type="button" id="save">Guardar</button><br>
+        <button type="button" id="update" style="display: none;">Actualizar</button>
+        <button type="button" id="limpiar">Limpiar</button>
+    </form>
+    <table>
+        <thead>
+            <th>Ru</th>
+            <th>Ci</th>
+            <th>Nombre Completo</th>
+            <th>Acciones</th>
+        </thead>
+        <tbody id="datafire"></tbody>
+    </table>
+    <script src="./javascript/javascript.js"></script>
+</body>
+</html>
