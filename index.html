@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="form">
+        <h2>USUARIO</h2> 
+        <form id="formulario">  
+            <div id="inputs">
+                <div>
+                    <label>Ru:</label> <br>
+                    <input type="text" name="ru" id="ru">
+                </div>
+                <div>
+                    <label>Ci:</label> <br>
+                    <input type="text" name="ci" id="ci">
+                </div>
+                <div>
+                    <label>Nombre Completo:</label> <br>
+                    <input type="text" name="nCompleto" id="nCompleto">
+                </div>
+                <div>
+                    <label>Acciones:</label> <br>
+                    <input type="text" name="Accion" id="acciones">
+                </div>
+            </div>
+            <br>
+            <div id="buttons">
+                <input type="button" id="guardar" value="guardar"><br>
+                <button type="submit" id="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div id="users">
+        <h2>Usuarios registrados</h2>
+        <div id="table">
+            <table>
+                <thead>
+                    <th>RU</th>
+                    <th>CI</th>
+                    <th>NOMBRE COMPLETO</th>
+                    <th>ACCIONES</th>
+                </thead>
+                <tbody id="dataFire"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
