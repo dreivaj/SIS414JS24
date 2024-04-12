@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1 de emergentes</title>
+</head>
+<body>
+    <input type="number" id="Numero1">
+    <input type="number" id="Numero2">
+    <button onclick="sumar()">Suma</button>
+  <script>
+    function sumar() {
+        var Numero1 = document.getElementById("Numero1").value;
+        var Numero2 = document.getElementById("Numero2").value;
+        var suma = parseInt(Numero1) + parseInt(Numero2)
+        if (suma % 2 === 0) {
+            document.writeln("Es par: ")
+        } else {
+            document.writeln("Es impar: ")
+        }
+        document.writeln(suma);
+    }
+  </script>
+</body>
+</html>
