@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pregunta de opción múltiple</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Pregunta:</h1>
+  <p>¿Cuáles de las siguientes opciones son colores primarios?</p>
+  <form id="myForm">
+    <input type="checkbox" name="respuesta" value="correcta"> Rojo<br>
+    <input type="checkbox" name="respuesta" value="incorrecta"> Verde<br>
+    <input type="checkbox" name="respuesta" value="correcta"> Azul<br>
+    <input type="checkbox" name="respuesta" value="incorrecta"> cafe<br>
+    <input type="checkbox" name="respuesta" value="incorrecta"> violeta<br>
+    <input type="button" value="Enviar" onclick="calcularPuntaje()">
+  </form>
+
+  <p id="puntaje"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
