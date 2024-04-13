@@ -1,0 +1,112 @@
+
+body{
+    display: flex;
+  justify-content: center; /* Alinea horizontalmente en el centro */
+  align-items: center; /* Alinea verticalmente en el centro */
+  width: 100vw; /* Ancho completo de la ventana */
+  height: 100vh; /* Alto completo de la ventana */
+  overflow-x: hidden;
+    background-image: url('https://i.pinimg.com/736x/e2/93/7a/e2937a1ffce3a4187e8346022eb8dfaf.jpg');
+}
+.verImages{
+    width: 250px;
+}
+main{
+    font-size: 20px;
+    color:  #60d4ea;
+    width: 80%;
+    background-color: rgb(55, 55, 57, 0.5);
+    border: 2px solid black ;
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: 0px 0px 20px black, 0px 0px 20px black;
+}
+#view{
+    display: flex;
+    background-color: rgb(2, 2, 2, 0.5);
+    border-radius: 10px;
+}
+#for{
+    width: 50%;
+    height: 45vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow:auto;
+}
+#for button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+form{
+    padding: 2%;
+    width: 100%;
+    margin: 5%;
+}
+input{
+    margin: 2%;
+}
+#send{
+    margin-top: 5%;
+    margin-left: 40%;
+}
+#description{
+    height: 4em;
+    overflow: auto;
+    background-color: rgb(55, 55, 57);
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+}
+#t{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    height: 45vh;
+    overflow: auto;
+}
+#table{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+th, td {
+        border: 1px solid black;
+        color: white;
+}
+#urls{
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(25, 25, 26, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(254, 206, 171, 0.5);
+}
+.volver{
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+.volver button{
+    align-self: center;
+    height: 2em;
+}
+button{
+    background-color: #9ae5f3;
+}
+input{
+    background-color: rgb(55, 55, 57);
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+}
+thead{
+    color: white
+}
