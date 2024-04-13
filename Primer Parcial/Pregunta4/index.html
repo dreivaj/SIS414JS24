@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 3</title>
+    <title>Pregunta 4</title>
 </head>
 <body>
     <form action="">
-        <label>RU</label>
-        <input type="text" name="ru" id="ru">
-        <label>CI</label>
-        <input type="text" name="ci" id="ci">
-        <label>Nombre Completo</label>
-        <input type="text" name="ncompleto" id="ncompleto">
+        <label>Nombre:</label>
+        <input type="text" name="name" id="name">
+        <label>Descripcion:</label>
+        <textarea name="body" id="body"></textarea>
+        <label>Imagen:</label>
+        <input type="file" id="img" name="img"><br>
         <input type="button" id="save" value="Guardar">
         <input type="button" id="update" value="Actualizar">
     </form>
-    
     <table>
         <thead>
-            <th>RU</th>
-            <th>CI</th>
-            <th>Nombre Completo</th>
-            <th>Acciones</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Accion</th>
         </thead>
         <tbody id="datafire">
 
         </tbody>
     </table>
-
     <script src="script.js"></script>
-
 </body>
 </html>
