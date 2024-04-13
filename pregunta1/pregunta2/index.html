@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario</title>
+</head>
+<body>
+  <h1>Cuestionario</h1>
+  <form id="quizForm">
+    <p>¿Cuáles son los colores?</p>
+    <input type="checkbox" name="respuesta" value="verde"> Verde<br>
+    <input type="checkbox" name="respuesta" value="mesa"> Mesa<br>
+    <input type="checkbox" name="respuesta" value="silla"> Silla<br>
+    <input type="checkbox" name="respuesta" value="platano"> Platano<br>
+    <input type="checkbox" name="respuesta" value="rojo"> Rojo<br>
+    <br>
+    <button type="button" onclick="calcularPuntaje()">Enviar</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

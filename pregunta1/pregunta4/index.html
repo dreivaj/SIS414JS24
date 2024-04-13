@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>CRUD</h1>
+
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Nª</th>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <button onclick="openModal('add')">AÑADIR NUEVO</button>
+
+    <div id="modal" class="hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Añadir o Eliminar</h2>
+            <form id="data-form" onsubmit="event.preventDefault()">
+                <input type="hidden" id="id" name="id">
+                <label for="name">NOMBE:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="data">DESCRIPCION:</label>
+                <textarea id="data" name="data" required></textarea><br>
+
+                <label for="image">IMAGEN:</label>
+                <input type="file" id="image" name="image"><br>
+
+                <button type="button" onclick="saveData()">GUARDAR</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="image-modal" class="hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <h2>VER IMAGEN</h2>
+            <img id="image-preview" src="" alt="Image Preview">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
