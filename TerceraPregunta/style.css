@@ -1,0 +1,18 @@
+#miTabla {
+    width: 100%;
+    border: 1px solid #ddd; /* Agregamos un borde a toda la tabla */
+    border-collapse: collapse;
+  }
+  
+  #miTabla th, #miTabla td {
+    border: 1px solid #ddd; /* Agregamos un borde a todas las celdas */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #miTabla th {
+    background-color: #f2f2f2;
+  }
+  
+  
+  
