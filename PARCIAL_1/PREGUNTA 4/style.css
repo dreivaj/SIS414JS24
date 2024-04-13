@@ -1,10 +1,10 @@
 
 body{
     display: flex;
-  justify-content: center; /* Alinea horizontalmente en el centro */
-  align-items: center; /* Alinea verticalmente en el centro */
-  width: 100vw; /* Ancho completo de la ventana */
-  height: 100vh; /* Alto completo de la ventana */
+  justify-content: center; 
+  align-items: center; 
+  width: 100vw; 
+  height: 100vh; 
   overflow-x: hidden;
     background-image: url('https://i.pinimg.com/736x/e2/93/7a/e2937a1ffce3a4187e8346022eb8dfaf.jpg');
 }
