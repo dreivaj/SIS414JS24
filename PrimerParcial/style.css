@@ -1,0 +1,76 @@
+body{
+    display: grid;
+    place-items: center;
+    gap: 10px;   
+    text-align: center;
+}
+table{
+    width: 50%;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.r4C{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+}
+.inputFile{
+display: none;
+}
+.container > .label{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 10px;
+    background: linear-gradient(45deg, blue, red);
+    cursor: pointer;
+}
+.container > button{
+    display: none;
+padding: 20px 25px;
+background: cornflowerblue;
+color: white;
+border: none;
+margin-bottom: 10px;
+cursor: pointer;
+font-size: 20px;
+font-weight: 700;
+}
+.fileText{
+    margin-bottom: 10px;
+}
+.bar{
+     height: 50px;
+     width: 500px;
+     background-color: #80808073;
+     margin-bottom: 10px;
+}
+.progress{
+    background: linear-gradient(12deg,red, blue);
+    height: 100%;
+    width: 0%;
+}
+.uploadPercentage{
+    font-size: 25px;
+}
+.img{
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    display: none;
+    border: 2px solid blueviolet;
+}
+.imageUploaded{
+    margin-top: 10px;
+}
