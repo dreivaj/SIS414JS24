@@ -1,7 +1,6 @@
 function result(){
     // Se crea un nodo con todas las opciones con en nombre opcion
     const resp = document.getElementsByName("opcion")
-    console.log(resp)
     let correc = 0
     let incorrec = 0
     for (let i = 0; i < resp.length; i++) {
@@ -9,10 +8,8 @@ function result(){
         if (resp[i].checked) {
             if (resp[i].value === "gato" || resp[i].value === "camino") {
                 correc++
-                console.log("correc " + correc)
             } else {
                 incorrec++
-                console.log("incorrect " + incorrec)
             }
         }
     }
