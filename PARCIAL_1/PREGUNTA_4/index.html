@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="urls"></div>
+        <div id="view">
+            <div id="tableContainer">
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Nro</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tBody" style="text-align: center;"></tbody>
+                </table>
+            </div>
+            <div id="formContainer">
+                <form id="form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" placeholder="nombre" required><br>
+                    
+                    <label for="description">Descripción:</label>
+                    <textarea id="description" placeholder="descripción" required></textarea><br>
+                    
+                    <label for="img">Imágenes:</label>
+                    <input type="file" id="img" accept="image/*" multiple><br>
+                    
+                    <button type="button" id="send">Enviar</button>
+                </form>
+            </div>
+        </div>                              
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
