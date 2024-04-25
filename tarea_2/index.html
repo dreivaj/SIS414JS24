@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CUESTIONARIO</h1>
+    <label> 1: ¿En qué año se fundó Bolivia?</label>
+    <br>
+    <input type="radio" name="p1" value="5"> 1825 <br>
+    <input type="radio" name="p1" value="0"> 1835 <br>
+    <input type="radio" name="p1" value="0"> 1900 <br>
+    <br>
+    <label>2: Completa la siguiente frase:</label>
+    <p>Más sabe el <input type="text" id="p2"> por viejo que por diablo</p>
+    <br>
+    <label>3: Selecciona la capital de Bolivia</label>
+    <select id="capital">
+        <option>La Paz</option>
+        <option>Sucre</option>
+        <option>Cochabamba</option>
+    </select>
+    <br>
+    <label>4: ¿Cuáles de los siguientes no son colores?</label>
+    <br>
+    <input type="checkbox" id="c1"> Gato <br>
+    <input type="checkbox" id="c2"> Rojo <br>
+    <input type="checkbox" id="c3"> Verde <br>
+    <input type="checkbox" id="c4"> Amarillo <br>
+    <br>
+    <label>5: ¿Cuál es el océano más grande del mundo?</label>
+    <br>
+    <input type="checkbox" id="pacifico"> Océano Pacífico <br>
+    <input type="checkbox" id="atlantico"> Océano Atlántico <br>
+    <input type="checkbox" id="artico"> Océano Ártico <br>
+    <input type="checkbox" id="indico"> Océano Índico <br>
+    <br>
+    <label>6: ¿Cuál es el planeta más grande del sistema solar?</label>
+    <select id="planeta">
+        <option>Júpiter</option>
+        <option>Saturno</option>
+        <option>Tierra</option>
+    </select>
+    <br>
+    <label>7. ¿Cuál es el metal más abundante en la corteza terrestre?</label>
+    <br>
+    <input type="radio" name="p7" value="0"> Oro <br>
+    <input type="radio" name="p7" value="0"> Plata <br>
+    <input type="radio" name="p7" value="5"> Aluminio <br>
+    <br>
+    <label>8. ¿Quién fue el primer hombre en pisar la luna?</label>
+    <br>
+    <input type="radio" name="p8" value="0"> Neil Armstrong <br>
+    <input type="radio" name="p8" value="0"> Buzz Aldrin <br>
+    <input type="radio" name="p8" value="5"> Neil Armstrong y Buzz Aldrin <br>
+    <br>
+    <label>9. ¿Cuál es la capital de Francia?</label>
+    <br>
+    <input type="radio" name="p9" value="5"> París <br>
+    <input type="radio" name="p9" value="0"> Marsella <br>
+    <input type="radio" name="p9" value="0"> Lyon <br>
+    <br>
+    <label>10. ¿Cuál es el metal más abundante en el núcleo de la Tierra?</label>
+    <br>
+    <input type="radio" name="p10" value="0"> Oro <br>
+    <input type="radio" name="p10" value="5"> Hierro <br>
+    <input type="radio" name="p10" value="0"> Plata <br>
+    <br>
+    <label id="result"></label>
+    <button onclick="Calcular()">Enviar</button>
+    <script src="./script.js"></script>
+</body>
+
+
