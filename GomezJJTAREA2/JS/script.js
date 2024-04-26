@@ -6,7 +6,6 @@ function calcular(){
             result=result+Number(element.value)
         }
     });
- 
     let p5 = document.getElementsByName("p5")
     p5.forEach(element => {
         if(element.checked==true){
@@ -39,8 +38,6 @@ function calcular(){
         if(element.checked==true){
             result=result+Number(element.value)
         }
-    
-        
     });
     let p8=document.getElementById("p8").value
     if(p8=="8"){
