@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firestore Example</title>
+  <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-storage.js"></script>
+  <script src="firebase-functions.js"></script>
+</head>
+<body onload="displayData()">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre"><br><br>
+  <label for="descripcion">Descripción:</label>
+  <input type="text" id="descripcion"><br><br>
+  <label for="imagen">Imagen:</label>
+  <input type="file" id="imagen"><br><br>
+  <button onclick="addData()">Agregar Producto</button>
+
+  <h2>Productos</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Número</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Imagen</th>
+      </tr>
+    </thead>
+    <tbody id="productos-table">
+    </tbody>
+  </table>
+</body>
+</html>
+
+
+
+
