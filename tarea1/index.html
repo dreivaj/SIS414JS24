@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input-container {
+            text-align: center; 
+        }
+
+        .input-container input {
+            width: 200px; 
+            padding: 5px; 
+            margin-bottom: 10px; 
+        }
+
+        .resultado {
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center; 
+        }
+
+        .resultado p {
+            margin: 0; 
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="input-container">
+        <input type="text" id="varA" placeholder="Digite A">
+        <br>
+        <input type="text" id="varB" placeholder="Digite B">
+    </div>
+    <button onclick="mifuncion()">sumar</button>
+    <div class="resultado" id="resultado"></div>
+    <script src="./scrip.js"></script>
+</body>
+</html>
