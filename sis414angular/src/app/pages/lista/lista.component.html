@@ -1,4 +1,37 @@
 <app-header></app-header>
 <p>lista works!</p>
+
+<div class="grid-container">
+    <div class="grid-item" *ngFor="let item of data; index as i">
+        <div class="card">
+            <img src="./assets/img_avatar.png" alt="Avatar" style="width:10%">
+            <div class="container">
+              <h4><b>{{item.name}}</b></h4> 
+              <p>{{item.description}}</p> 
+            </div>
+        </div>        
+    </div>
+</div>
+
 <img src="./assets/images.jpg">
+<table border="1px">
+    <tbody>
+        <tr>
+            <th>Nro.</th>
+            <th>name</th>
+            <th>description</th>
+            <th>link</th>
+            <th>image</th>                                    
+        </tr>
+    </tbody>
+    <tbody>
+        <tr *ngFor="let item of data; index as i">
+            <td>{{i+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.link}}</td>
+            <td>{{item.image}}</td>
+        </tr>    
+    </tbody>
+</table>
 <app-footer></app-footer>
