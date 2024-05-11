@@ -1,0 +1,120 @@
+
+.topHeader{
+    display: flex;
+    width: 100%;
+    background: #1e245f;
+    padding: 10px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+.topHeader > nav {
+    font-size:15px;
+    display: flex;
+    width: 73%;
+    padding: 5px 0 5px 0;
+    gap: 30px;
+}
+.topHeader > nav > a {
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    gap: 10px;
+}
+.topHeader nav > a > img{
+    width: 18px;
+    height: 18px;
+    opacity: .7;
+}
+section{
+    display: flex;
+    width: 100%;
+    border-bottom: 5px solid #D10024;
+    height: 400px;
+    justify-content: center;
+    gap: 80px;
+}
+section > img{
+    margin-top: 10px;
+    width: 130px;
+    height: 130px;
+}
+section > h1{
+    font-size: 36px;
+    width: 500px;
+    text-align: center;
+    margin: 50px 0 0 250px;
+    color: #000080;
+}
+section > aside{
+    width: 320px;
+    height: 100%;
+    display: flex;
+    color: #DC143C;
+}
+.sectionOneHeader{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+    position: relative;
+}
+.sectionTwoHeader{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    color: #000080;
+    gap: 0;
+}
+.sectionOneHeader > figure > img{
+    width: 18px;
+    height: 18px;
+}
+.sectionOneHeader > figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bellMove 0.45s infinite;
+    margin-right: 50px;
+}
+.sectionOneHeader > img:nth-child(2) {
+    width: 150px;
+    height: 150px;
+}
+.sectionOneHeader > img:nth-child(1){
+    width: 120px;
+    height: 120px;
+}
+.sectionTwoHeader > img {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    animation: mover 2.8s infinite;
+}
+.sectionTwoHeader > h3{
+    position: relative;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+    animation: move 2s infinite;
+}
+@keyframes mover {
+    0%{transform: translateX(-40px);}
+    50%{transform: translateX(50px);}
+    100%{transform: translateX(-40px);}
+}
+@keyframes move {
+    0%{transform: translateX(-20px);}
+    50%{transform: translateX(25px);}
+    100%{transform: translateX(-20px);}
+}
+@keyframes bellMove{
+    0%{transform: translateX(-5px);}
+    50%{transform: translateX(10px);}
+    100%{transform: translateX(-5px);}
+}
