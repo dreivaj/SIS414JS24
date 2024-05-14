@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,9 +8,10 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent{
   cont: number = 0;
   isClicked: boolean[] = [false, false, false, false, false];
+  isClickedMenu: boolean = false;
   onclick(i: number){
     this.isClicked[i] = !this.isClicked[i];
     this.cont= 0;
@@ -20,7 +21,9 @@ export class HeaderComponent {
       this.cont = this.cont + 1;
     }
   }
-
+  clickMenu(){
+    this.isClickedMenu = !this.isClickedMenu;
+  }
   exit(){
     while(this.cont < this.isClicked.length){
       this.isClicked[this.cont] = false;

@@ -72,6 +72,8 @@ a{
     color: #D10024;
     border-bottom: 2px solid #D10024;;
 }
+
+
 @media(max-width: 1000px){
     .row{
         padding: 0;
@@ -87,4 +89,33 @@ a{
     #navigation{
         display: none;
     }
+    #menu-r{
+        background: black;
+        z-index: 2;
+        width: 50%;
+        height: 100vh;
+        place-items: center;
+        overflow: hidden;
+    }
+    .dropdown-toggle{
+        position: relative;
+        display: block;
+        margin-top: 10%;
+    }
+    #menu-r a{
+        color: #fff;
+    }
+    #menu-r a:hover{
+        color: crimson;
+        background-color: white;
+    }
+    .dropdown-menu{
+        display: grid;
+        position:relative;
+        background: none;
+    }
+    .main-nav{
+        margin-top: 20%;
+    }
+    
 }

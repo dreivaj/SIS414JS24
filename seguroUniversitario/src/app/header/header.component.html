@@ -1,4 +1,74 @@
-<div id="head" (click)="exit()">
+<div *ngIf="isClickedMenu" style="display: flex; position: fixed; width: 100%; z-index: 1;">
+    <div id="menu-r">
+        <ul class="main-nav" style="width: 90%; overflow: hidden;">
+            <li class="active" style="width: 100%; border-bottom: 2px solid crimson;"><a href="/" style="color: crimson;">Inicio</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="onclick(1)"><b>Institucional</b></a>
+                <ul *ngIf="isClicked[1]" class="dropdown-menu">
+                    <li><a href="institucional.html#antgra">Datos Generales</a></li>
+                    <li><a href="institucional.html#sitgeo">Situación Geográfica</a></li>
+                    <li><a href="./plantelejecutivo.html">Plantel Ejecutivo</a></li>
+                    <li><a href="./organigrama.html">Estructura Orgánica</a></li>
+                    <li><a href="./directorio.html">Directorio</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="onclick(2)"><b>Servicios</b></a>
+                <ul *ngIf="isClicked[2]" class="dropdown-menu">
+                    <li><a href="#">Consulta Externa</a></li>
+                    <li><a href="#">Laboratorio Clínico</a></li>
+                    <li><a href="#">Imagenología</a></li>
+                    <li><a href="#">Enfermería</a></li>
+                    <li><a href="#">Farmacia</a></li>
+                    <li><a href="#">Fisioterapia</a></li>
+                    <li><a href="#">Ecografía</a></li>
+                    <li><a href="#">Internación Clínica y Quirúrgica</a></li>
+                    <li><a href="./afiliaciones.html">Afiliaciones</a></li>
+                    <li><a href="#" style="color: red;"><b class="agrandar">Fichaje</b></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="onclick(3)"><b>Personal de Salud</b></a>
+                <ul *ngIf="isClicked[3]" class="dropdown-menu">
+                    <li><a href="#">Administrativo</a></li>
+                    <li><a href="#">Médico</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="onclick(4)"><b>Contrataciones</b></a>
+                <ul *ngIf="isClicked[4]" class="dropdown-menu">
+                    <li><a href="#">Menor</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Anpe</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Licitación Pública</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Por Excepción</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Por Desastres y/o Emergencias</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Directa</a></li>
+                </ul>
+            </li>
+    
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="onclick(5)"><b>Transparencia</b></a>
+                <ul *ngIf="isClicked[5]" class="dropdown-menu">
+                    <li><a href="asesoria_legal.html">Asesorial Legal</a></li>
+                    <li class="divider"></li>
+                    <li><a href="historial_invitaciones.html">Historial de Avisos</a></li>
+                    <li class="divider"></li>
+                    <li><a href="rrhh.html">Recursos Humanos</a></li>
+                    <li class="divider"></li>
+                    <li><a href="auditoria.html">Auditoría</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div style="background:red; width: 50%; height: 100vh; opacity: 0;" (click)="clickMenu()">
+    </div>
+</div>
+<div id="head">
     <div id="top-header">
         <div class="container">
             <ul class="header-links">
@@ -33,7 +103,7 @@
             <div class="row"><!-- LOGO -->
                 <div class="col-md-3">
                     <div class="header-logo">
-                        <a href="#" class="logo">
+                        <a href="#" id="log" class="logo">
                             <img src="https://ssupotosi.com.bo/img/logo.png" style="width: 100px; height: 95px;">
                         </a>
                     </div>
@@ -75,7 +145,7 @@
                         </div>
                 <!-- Menu Toogle -->
                         <div class="menu-toggle">
-                            <a href="#">
+                            <a href="#" (click)="clickMenu()">
                                 <i class="fa fa-bars" style="color: navy;"></i>
                                 <span class="text-primary" style="color: navy;">Menu</span>
                             </a>
