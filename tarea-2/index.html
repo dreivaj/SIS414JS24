@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="font-family:cursive; background: rgba(5, 137, 177, 0.685); font-style: oblique; padding: 50px; ">
+
+    <label><strong>¿En qué año se fundó Bolivia?</strong></label>
+    <br>
+    <input type="radio" name="r1" value="5"> 1826
+    <input type="radio" name="r1" value="0"> 1745
+    <input type="radio" name="r1" value="0"> 2010 <br><br>
+
+
+    <label><strong>Completa la siguiente frase:</strong></label>
+    <p style="margin: 0;">Mas sabe el <input type="text" id="r2" style="width: 70px;"> por viejo que por diablo.</p><br>
+
+
+    <label><strong>¿Cuál es la capital de Francia?</strong></label>
+    <select id="r3" style="display: flex;">
+        <option value="0">Londres</option>
+        <option value="5">Paris</option>
+        <option value="0">Versalles</option>
+        <option value="0">Estrasburgo</option>
+    </select><br>
+
+
+    <label><strong>Elige la opcion correcta: </strong></label><br>
+    <label><strong>cual es el satelite natural mas cercano al planeta tierra?</strong></label><br>
+    <input type="checkbox" name="r4" value="0">mar de dudas
+    <input type="checkbox" name="r4" value="5">La Luna
+    <input type="checkbox" name="r4" value="0">El sol
+    <input type="checkbox" name="r4" value="0">El satelite Galileo <br><br>
+    
+
+    <label><Strong>Cuanto es la suma de 1099 + 1?</Strong></label><br>
+    <input type="number" name="r5" id="r5"><br><br>
+
+
+    <label> <strong>Cuales son los colores primarios?</strong></label><br>
+        <input type="checkbox" name="color" value="0"> Gato, amarillo y verde <br>
+        <input type="checkbox" name="color" value="0"> Rojo, amarillo y verde <br>
+        <input type="checkbox" name="color" value="0"> Verde, azul y cafe <br>
+        <input type="checkbox" name="color" value="5"> rojo, amarillo y azul <br><br>
+
+    <label><strong>¿Cuantos huesos tiene una persona?</strong></label><br>
+    <input type="radio" name="r7" value="0"> 300
+    <input type="radio" name="r7" value="0"> 208
+    <input type="radio" name="r7" value="5"> 206 <br><br>
+    
+
+    <label><strong>¿Cuántas estaciones tiene el año?</strong></label>
+    <select name="r8" style="display: flex;">
+        <option value="0">tres</option>
+        <option value="0">cinco</option>
+        <option value="0">dos</option>
+        <option value="5">cuatro</option>
+    </select><br>
+
+
+    <label><strong>si 6 + 7 = 13 <br> son las 6pm dentro de 7horas que hora es?</strong></label><br>
+    <input type="time" name="r9">  <br><br>
+
+    
+    <label><strong>Beethoven componia sinfonias estando sordo</strong></label><br>
+        <input type="radio" name="r10" value=5>
+        <label>Verdadero</label>
+        <input type="radio"name="r10" value=0>
+        <label>Falso</label><br><br>
+
+
+    <button onclick="calcular()">enviar</button> <br>
+    <label id="result"></label>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
