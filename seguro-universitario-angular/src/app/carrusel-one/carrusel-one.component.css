@@ -1,0 +1,33 @@
+.container-carrusel-1 {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas a lo largo del contenedor */
+    
+}
+
+.columna {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    margin: 0 10px; /* Espacio entre las columnas */
+    overflow: hidden;
+}
+
+
+.contenido-c1{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    
+}
+
+.titulo-c1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.parrafo-c1 {
+    font-size: 14px;
+    line-height: 1.2;
+}

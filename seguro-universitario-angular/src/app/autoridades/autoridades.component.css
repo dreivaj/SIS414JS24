@@ -1,0 +1,21 @@
+.com-container {
+    text-align: left;
+    
+  }
+  
+  .com-titulo {
+    text-decoration: underline;
+    margin-left: 75px;
+  }
+  
+  .com-subtitulo-container {
+    background-color: red;
+    width: 80%;
+    margin-left: 75px; /* Para centrar el contenedor */
+    padding: 5px; /* Añade un poco de espacio alrededor del texto */
+  }
+  
+  .com-subtitulo {
+    color: white; /* Color del texto */
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+  }

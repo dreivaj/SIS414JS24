@@ -1,0 +1,44 @@
+.roll-container {
+    text-align: left;
+  }
+  
+  .roll-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-left: 65px;
+  }
+  
+  .roll-subtitulo {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 65px;
+  }
+  
+  .roll-carrusel {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .roll-cuadro {
+    position: relative; /* Establece posición relativa para los cuadros */
+    width: 200px;
+    margin: 0 10px; /* Ajusta el margen entre los cuadros según sea necesario */
+  }
+  
+  .roll-texto {
+    position: absolute; /* Establece posición absoluta para el texto */
+    top: 0; /* Alinea el texto en la parte superior */
+    left: 0; /* Alinea el texto en la parte izquierda */
+    color: white; /* Establece el color del texto a blanco */
+    padding: 5px; /* Añade un poco de espacio alrededor del texto */
+    font-size: 25px; /* Tamaño de fuente */
+    font-weight: bold;
+  }
+   
+  .roll-cuadro img {
+    width: 100%;
+    height: auto;
+  }
+  

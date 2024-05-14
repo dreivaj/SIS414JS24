@@ -1,0 +1,55 @@
+.car-medico-titulo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .car-medico-titulo p {
+    font-size: 30px; /* Ajusta el tamaño del párrafo según sea necesario */
+    margin-left: 5px; /* Ajusta el margen izquierdo para separar del icono */
+    background-color: #ffdeacde; /* Color piel */
+    padding: 10px; /* Añade un poco de espacio alrededor del párrafo */
+    border-radius: 5px; /* Añade bordes redondeados al fondo */
+  }
+  
+  .car-medico-titulo .icon-med {
+    margin-right: 10px; /* Ajusta el margen derecho para separar del párrafo */
+  }
+  
+  .icon-med{
+    width: 35px;
+    height: 35px;
+    margin-left: 75px;
+  }
+  
+  .car-medico-tarjetas {
+    display: flex;
+    justify-content: center;
+    margin-left:  75px;
+    margin-right: 75px;
+  }
+  
+  .car-medico-tarjeta {
+    width: 23%;
+    border: 15px solid rgb(0, 0, 148); /* Borde azul */
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .car-medico-tarjeta img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .car-medico-contenido {
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    /* border-top: 5px solid red; */ /* Borde rojo */
+  }
+  
+  .car-medico-contenido h3,
+  .car-medico-contenido p {
+    margin: 0;
+  }

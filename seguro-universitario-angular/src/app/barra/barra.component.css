@@ -1,0 +1,50 @@
+.barra {
+    height: 20px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1e245f;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.icono {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.icono img {
+    height: 25px; 
+    margin-right: 5px;
+
+}
+
+.icono p {
+    margin: 0;
+    color: white; 
+    font-size: 16px;
+}
+
+.seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imagen {
+    width: 100px;
+    height: 95px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.titulo {
+    text-align: center;
+    margin: 0;
+    line-height: 1.1;
+    color: navy;
+    font-weight: bold;    
+}
