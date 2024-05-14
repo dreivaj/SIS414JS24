@@ -1,0 +1,176 @@
+<div id="head" (click)="exit()">
+    <div id="top-header">
+        <div class="container">
+            <ul class="header-links">
+                <li>
+                    <a href="https://ssupotosi.com.bo/tel:%2026224161">
+                        <img src="./phone-flip-solid.svg" alt=""> Emergencias +591-2-6224161
+                    </a>  
+                </li>
+                <li>
+                    <a href="https://ssupotosi.com.bo/mail:a%20segurosocialluniversitario@ssupotosi.com.bo">
+                        <i class="fa fa-envelope"></i>
+                        segurosocialluniversitariossupotosi.com.bo
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-map-marker"></i>
+                        Calle Calama N° 107
+                    </a>
+                </li>
+            </ul> 
+        </div>
+        <ul class="header-links pull-right">
+            <li style="width: 120px; -webkit-animation-name: rebote; -webkit-animation-iteration-count: infinite;">
+              <a href="#"><marquee behavior="ALTERNATE"><i class="fa fa-sign-in" style="color: red;"></i><b><b>APLICATIVOS</b></b></marquee></a>
+            </li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+    <div id="header"><!-- container -->
+        <div class="container"><!-- row -->
+            <div class="row"><!-- LOGO -->
+                <div class="col-md-3">
+                    <div class="header-logo">
+                        <a href="#" class="logo">
+                            <img src="https://ssupotosi.com.bo/img/logo.png" style="width: 100px; height: 95px;">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6" style="width: 500px;">
+                    <div class="header-logo">
+                        <a href="#" class="logo" style=" text-align: center;">
+                            <h1 class="text-center"><br><b style="color: navy;">SEGURO SOCIAL UNIVERSITARIO POTOSÍ</b></h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="header-logo">
+                        <a href="#" class="logo">
+                            <img src="https://ssupotosi.com.bo/img/Escudo_de_Bolivia.png" style="width: 101px; height: 101px;">
+                        </a>
+                    </div>
+                    <div class="header-ctn"> <!-- Wishlist -->
+                        <div>
+                            <a href="http://fichaje.ssupotosi.com.bo">
+                                <marquee behavior="ALTERNATE"><i class="fas fa-spinner" style="color: red;"></i></marquee>
+                                <span class="bg-red" style="color: red;"><b class="agrandar" style="color: navy;"><marquee behavior="ALTERNATE">Reservas</marquee></b></span> <!--div class="qty">3</div-->
+                            </a>
+                        </div> <!-- /Wishlist --> <!-- Cart -->
+    
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                <marquee behavior="ALTERNATE">
+                                <i class="fa fa-bell" style="color: crimson;"></i>
+                                <span class="text-primary" style="color: crimson;"><b>Siguenos</b></span>
+                                </marquee>
+                            </a>
+                            <div class="cart-dropdown" style="background-color: navy;">
+                                <div class="cart-btns" style="padding: 0px; margin: 0px; border: 0px;">
+                                    <a href="https://facebook.com/ssupotosi/" target="_blank">Facebook  <i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.youtube.com/channel/UC2ymp6s2JzbrkGlnIpv9lbg" target="_blank">Youtube  <i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                <!-- Menu Toogle -->
+                        <div class="menu-toggle">
+                            <a href="#">
+                                <i class="fa fa-bars" style="color: navy;"></i>
+                                <span class="text-primary" style="color: navy;">Menu</span>
+                            </a>
+                        </div> <!-- /Menu Toogle -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav id="navigation">
+        <div class="container">
+            <div id="responsive-nav">
+                <ul class="main-nav nav navbar-nav">
+                    <li class="active"><a href="/">Inicio</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="onclick(1)"><b>Institucional</b></a>
+                        <ul *ngIf="isClicked[1]" class="dropdown-menu">
+                            <li><a href="institucional.html#antgra">Datos Generales</a></li>
+                            <li><a href="institucional.html#sitgeo">Situación Geográfica</a></li>
+                            <li><a href="./plantelejecutivo.html">Plantel Ejecutivo</a></li>
+                            <li><a href="./organigrama.html">Estructura Orgánica</a></li>
+                            <li class="divider"></li>
+                            <li><a href="./directorio.html">Directorio</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="onclick(2)"><b>Servicios</b></a>
+                        <ul *ngIf="isClicked[2]" class="dropdown-menu">
+                            <li><a href="#">Consulta Externa</a></li>
+                            <li><a href="#">Laboratorio Clínico</a></li>
+                            <li><a href="#">Imagenología</a></li>
+                            <li><a href="#">Enfermería</a></li>
+                            <li><a href="#">Farmacia</a></li>
+                            <li><a href="#">Fisioterapia</a></li>
+                            <li><a href="#">Ecografía</a></li>
+                            <li><a href="#">Internación Clínica y Quirúrgica</a></li>
+                            <li><a href="./afiliaciones.html">Afiliaciones</a></li>
+                            <li><a href="#" style="color: red;"><b class="agrandar">Fichaje</b></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="onclick(3)"><b>Personal de Salud</b></a>
+                        <ul *ngIf="isClicked[3]" class="dropdown-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"></a>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"></a><a href="#">Administrativo</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Médico</a></li>
+                        </ul>
+                    </li>
+                <!--li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>RRHH</b></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">Convocatorias Públicas</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Pasantias y Prácticas</a></li>
+                    </ul>
+                </li-->
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="onclick(4)"><b>Contrataciones</b></a>
+                        <ul *ngIf="isClicked[4]" class="dropdown-menu">
+                            <li><a href="#">Menor</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Anpe</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Licitación Pública</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Por Excepción</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Por Desastres y/o Emergencias</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Directa</a></li>
+                        </ul>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="onclick(5)"><b>Transparencia</b></a>
+                        <ul *ngIf="isClicked[5]" class="dropdown-menu">
+                            <li><a href="asesoria_legal.html">Asesorial Legal</a></li>
+                            <li class="divider"></li>
+                            <li><a href="historial_invitaciones.html">Historial de Avisos</a></li>
+                            <li class="divider"></li>
+                            <li><a href="rrhh.html">Recursos Humanos</a></li>
+                            <li class="divider"></li>
+                            <li><a href="auditoria.html">Auditoría</a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"></a>
+                                <ul class="dropdown-menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown"></a>
+                                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"></a><a href="#">Convocatorias Públicas</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Pasantias y Prácticas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+      <hr>
+</div>
