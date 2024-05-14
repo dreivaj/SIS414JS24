@@ -1,0 +1,48 @@
+.contenedor {
+    background-image: url('imagen_de_fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserva {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.formulario {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+button {
+    border: 2px solid #00cccc;
+    background-color: transparent;
+    color: #00cccc;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mensaje {
+    color: red;
+    margin-top: 20px;
+}
