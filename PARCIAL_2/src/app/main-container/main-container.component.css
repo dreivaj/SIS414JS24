@@ -1,0 +1,100 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    align-items: center;
+}
+
+.main-content {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: 30px;
+    color: #2B2D42;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.main-content > p {
+    font-weight: bold;
+    font-size: large;
+    color: #000080;
+    margin-top: 15px;
+}
+
+.top-link {
+    color: #DC143C;
+    text-decoration: underline;
+}
+
+.article-container {
+    margin-top: 40px;
+    width: 70%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    position: absolute;
+    display: flex;
+    gap: 40px;
+    animation: scroll 25s linear infinite;
+}
+
+.article {
+    position: relative;
+    width: 300px;
+    height: 280px;
+    transition: transform .3s ease;
+}
+
+.article img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.article:hover {
+    transform: scale(1.02);
+    border: 3px solid red;
+}
+
+.article > figcaption {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    width: 70%;
+    padding: 35px;
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.article::after,
+.article::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.article::after {
+    background: linear-gradient(to top right, #dc143cc0 25%, transparent 20%, transparent 50%);
+    transform: rotate(90deg);
+}
+
+.article::before {
+    background: linear-gradient(to top right, #000080e0 20%, #000080e5 40%, #000080e0 25%, transparent 30%);
+    transform: rotate(90deg);
+}
