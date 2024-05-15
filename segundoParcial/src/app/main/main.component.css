@@ -281,18 +281,17 @@ main {
     display: flex;
     flex-direction: column;
     height: 450px;
-    color: #2b2d42;
     text-transform: uppercase;
     .colorDistinto{
         font-size: 35px;
-        color: #2b2d42;
+        color: #616166;
         width: 300px;
       }
     & h1 {
         font-weight: bold;
         font-size: 35px;
       margin-top: 25px;
-      color: black;
+      color: #2b2d42;
       margin-top: 0;
     }
     & img {
