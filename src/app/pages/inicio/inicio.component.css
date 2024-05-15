@@ -1,0 +1,62 @@
+.container{
+    width:90vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.container h4{
+    margin-left: 0px;
+    text-decoration: underline;
+}
+.cabeza{
+    background-color: crimson;
+    width: 1200px;
+    height: 30px;
+}
+.cabeza a {
+    color: black;
+    text-decoration: none;
+    margin-left: 0px;
+}
+.doctores{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    text-align: center;
+    width:70vw;
+    animation: scrolls 39s linear infinite;
+}
+
+.personA{
+    width: min-content;
+    height: min-content;
+    box-shadow: 0 0 0 16px navy;
+    margin: 16px 32px;
+    border-top-left-radius: 16px 16px;
+}
+
+.personA img{
+    width: 240px;
+    height: 270px;
+}
+.personB{
+    width: min-content;
+    height: min-content;
+    box-shadow: 0 0 0 16px crimson;
+    margin: 16px 32px;
+    border-top-left-radius: 16px 16px;
+    
+}
+.personB img{
+    width: 240px;
+    height: 270px;
+}
+@keyframes scrolls {
+    0% {
+        transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+        transform: translateX(-70%);
+    }
+  }

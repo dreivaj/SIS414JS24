@@ -1,0 +1,17 @@
+.container h2{
+    justify-content: center;
+    margin-left: 250px;
+    text-decoration: underline;
+}
+h4 {
+    margin-left: 200px;
+    text-decoration: underline;
+}
+img {
+    width: 550px;
+    height: 400px;
+    margin-left: 150px;
+}
+b {
+    margin-left: 500px;
+}

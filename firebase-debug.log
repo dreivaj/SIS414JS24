@@ -1,0 +1,21 @@
+[debug] [2024-05-15T18:26:15.092Z] ----------------------------------------------------------------------
+[debug] [2024-05-15T18:26:15.100Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-15T18:26:15.101Z] CLI Version:   13.9.0
+[debug] [2024-05-15T18:26:15.102Z] Platform:      win32
+[debug] [2024-05-15T18:26:15.102Z] Node Version:  v20.12.1
+[debug] [2024-05-15T18:26:15.103Z] Time:          Wed May 15 2024 14:26:15 GMT-0400 (hora de Bolivia)
+[debug] [2024-05-15T18:26:15.103Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-15T18:26:15.142Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-15T18:26:15.143Z] > authorizing via signed-in user (eisaartq2302@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\HP\Desktop\angular_exam\examen.segundoparcial-emergetes
+

@@ -1,0 +1,115 @@
+.containerArticle{
+    margin-top: 60px;
+    width: 97%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.des{
+    position: relative;
+    transition: transform .3 ease;
+    width: 300px;
+    height: 280px;
+}
+.slaider{
+    display: flex;
+    gap: 40px;
+    animation: scroll 60s linear infinite;
+}
+.des img{
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+.art1:hover{
+    transform: scale(1.02);
+    border: 3px solid red;
+}
+.des > h1{
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    width: 70%;
+    padding: 35px;
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.des::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    background: linear-gradient(to top right, #dc143cc0 25%, transparent 20%, transparent 50%);
+    transform: rotate(90deg);
+}
+.des::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    background: linear-gradient(to top right, #000080e0 20%, #000080e5 40%, #000080e0 25%, transparent 30%);
+    transform: rotate(90deg);
+}
+
+.letra{
+    display: flex;
+    text-emphasis: after;
+}
+.let1{
+    text-decoration:auto;
+    display: flex;
+}
+
+.carrucel-items{
+    display: flex;
+    gap: 40px;
+    animation: scrolls 80s linear infinite;
+  
+  }
+  .carrucel-item img{
+    width: 100%;
+    height: 100%;
+  }
+  .carrucel{
+    margin-top: 90px;
+    width: 54%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .carrucel-item{
+    width: 200px;
+    height: 100px;
+    position: relative;
+  }
+  
+  
+@keyframes scrolls {
+    0% {
+        transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+        transform: translateX(-70%);
+    }
+  }

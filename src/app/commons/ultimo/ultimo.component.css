@@ -1,0 +1,33 @@
+.carrucel-items{
+  display: flex;
+  gap: 40px;
+  animation: scrolls 200s linear infinite;
+
+}
+.carrucel-item img{
+  width: 100%;
+}
+.carrucel{
+  margin-top: 40px;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.carrucel-item{
+  width: 300px;
+  height: 280px;
+  position: relative;
+}
+@keyframes scrolls {
+  0% {
+      transform: translateX(0);
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+      transform: translateX(-70%);
+  }
+}

@@ -1,0 +1,21 @@
+
+.title {
+    color: crimson;
+    text-align: center;
+    margin-top: 20px;  
+}
+.paragraph {
+    color: navy;
+}
+.colim {
+    display: flex;
+}
+.col-lg-4, .col-md-4, .col-sm-12, .col-xs-12 {
+    flex: 1;
+    padding: 4px;
+    text-align: justify;
+}
+#sitgeo {
+    padding: 4px;
+    text-align: justify;
+}
