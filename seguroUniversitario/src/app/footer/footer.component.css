@@ -22,6 +22,7 @@
 .footer-links a{
     color: white;
     text-decoration: none;
+    font-size: 0.8em;
     margin: 0;
 }
 .col-md-2{
@@ -39,8 +40,28 @@
 .copyright{
     display: block;
     text-align: center;
+    font-size: 0.8em;
 }
-
+.footer-title{
+    font-size: 1em;
+}
 li :hover{
     color: crimson;
+}
+@media(max-width: 1000px){
+    .row{
+        display: inline-block;
+        justify-content: left;
+    }
+    .footer{
+        float: left;
+        width: 100%;
+    }
+    .col-md-2, .service{
+        width: 100%;
+        padding-left: 0;
+    }
+    .footer-links li{
+        margin-left: 0;
+    }
 }

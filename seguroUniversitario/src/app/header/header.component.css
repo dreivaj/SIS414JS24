@@ -4,36 +4,52 @@
 #top-header {
     margin: 0;
     background-color: rgb(3, 3, 82);
+    padding: 0;
+}
+#top-header .container{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    width: 100%;
+}
+#top-header i{
+    color: crimson;
+}
+#top-header a{
+    font-size: 0.7em;
 }
 .container {
-    margin-right: auto;
-    margin-left: auto;
     width: 100%;
     
 }
 #header{
-    margin-left: 10%;
+    display: grid;
+    place-items: center;
+}
+#header .container{
+    width: 100%;
+    display: grid;
+    place-items: center;
 }
 .menu-toggle{
     display: none;
 }
 .header-links{
-    float: left;
+    flex-grow: 1;
+    flex-basis: 300;
     list-style:none;
-    margin-right: 20px;
-    margin-left: 10%;
+    display: inline-block;
+    place-items: center;
 }
 .header-links li{
-    display: inline-block;
-    margin-right: 20px;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .header-links li a{
     color: #fff;
 }
-.header-logo{
-    float: left;
-    margin-right: 10%;
-}
+
 .row{
     display: flex;
     width: 90%;
@@ -76,7 +92,12 @@ a{
 
 @media(max-width: 1000px){
     p, b, a, h1, h2, h3, h4, h5{
+        
         font-size: 1em;
+    }
+    .enlas{
+        display: flex; justify-content: center; place-items: center;
+        gap: 20px;
     }
     .row{
         padding: 0;
@@ -105,6 +126,7 @@ a{
         display: block;
         margin-top: 10%;
         color: #fff;
+        text-align: start;
     }
     #menu-r a:hover{
         color: crimson;
@@ -114,6 +136,7 @@ a{
         display: grid;
         position:relative;
         background: none;
+        text-align: start;
     }
     .dropdown-menu li a{
         color: gray;
@@ -122,9 +145,8 @@ a{
         margin-top: 20%;
     }
     .header-logo{
-        margin-left: 20px;
-        float: none;
         font-size: 1.5em;
     }
+    
     
 }
