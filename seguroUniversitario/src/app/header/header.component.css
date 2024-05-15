@@ -3,7 +3,7 @@
 }
 #top-header {
     margin: 0;
-    background-color: #1e245f;
+    background-color: rgb(3, 3, 82);
 }
 .container {
     margin-right: auto;
@@ -75,6 +75,9 @@ a{
 
 
 @media(max-width: 1000px){
+    p, b, a, h1, h2, h3, h4, h5{
+        font-size: 1em;
+    }
     .row{
         padding: 0;
         margin: 0;
@@ -92,7 +95,7 @@ a{
     #menu-r{
         background: black;
         z-index: 2;
-        width: 50%;
+        width: 75%;
         height: 100vh;
         place-items: center;
         overflow: hidden;
@@ -101,8 +104,6 @@ a{
         position: relative;
         display: block;
         margin-top: 10%;
-    }
-    #menu-r a{
         color: #fff;
     }
     #menu-r a:hover{
@@ -114,8 +115,16 @@ a{
         position:relative;
         background: none;
     }
+    .dropdown-menu li a{
+        color: gray;
+    }
     .main-nav{
         margin-top: 20%;
+    }
+    .header-logo{
+        margin-left: 20px;
+        float: none;
+        font-size: 1.5em;
     }
     
 }
