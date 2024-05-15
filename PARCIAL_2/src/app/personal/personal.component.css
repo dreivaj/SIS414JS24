@@ -7,6 +7,7 @@
     flex-direction: column;
     display: flex;
     border-bottom: 1px solid #2b2d4238;
+    overflow-x: hidden;
 }
 
 .content-box > h1 {

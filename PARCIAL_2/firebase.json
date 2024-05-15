@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist\\segundo-parcial\\browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
