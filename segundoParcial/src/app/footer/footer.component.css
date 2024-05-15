@@ -1,0 +1,74 @@
+.footerSection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    background: #15161D;
+    align-items: center;
+    
+    & nav{
+        width: 80%;
+        height: 75%;
+        display: flex;
+        .sectOne{
+            width: 50%;
+            margin-top: 60px;
+            background: red;
+            & h1{
+                font-size: 25px;
+                font-weight: 400;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                color: white;   
+            }
+            & nav{
+                width: 100%;
+                height: 90%;
+            }
+        }
+        .sectTwo{
+            width: 50%;
+            margin-top: 60px;
+            & h1{
+                margin-bottom: 20px;
+                font-size: 25px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: white;
+            }
+            & nav{
+                width: 100%;
+                height: 90%;
+                & a{
+
+                    & img{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+            background: yellow;
+        }
+    }
+
+    .copyAndMore{
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #1E1F29;
+        gap: 5px;
+        & h4{
+            color: #B9BABC;
+            & strong{
+                color: white;
+            }
+            & img{
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
