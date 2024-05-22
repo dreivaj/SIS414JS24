@@ -9,6 +9,9 @@ import { MainComponent } from './pages/main/main.component';
 import { ListaComponent } from './pages/lista/lista.component';
 import { NofoundComponent } from './pages/nofound/nofound.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './commons/navbar/navbar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +19,13 @@ import { NofoundComponent } from './pages/nofound/nofound.component';
     FooterComponent,
     MainComponent,
     ListaComponent,
-    NofoundComponent
+    NofoundComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,9 +12,24 @@
         </div>        
     </div>
 </div>
-
-<img src="./assets/images.jpg">
 <table border="1px">
+    <tbody>
+        <tr>
+            <th>ID.</th>
+            <th>name</th>
+            <th>description</th>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr *ngFor="let item of dataList; index as i">
+            <td>{{i+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.decription}}</td>
+        </tr>    
+    </tbody>
+</table>
+<img src="./assets/images.jpg">
+<table border="1px" id="hola">
     <tbody>
         <tr>
             <th>Nro.</th>
