@@ -12,6 +12,12 @@ import { NofoundComponent } from './pages/nofound/nofound.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './commons/navbar/navbar.component';
 
+import { environment } from 'src/environments/environment';
+import { LoginComponent } from './pages/login/login.component';
+
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,14 +26,18 @@ import { NavbarComponent } from './commons/navbar/navbar.component';
     MainComponent,
     ListaComponent,
     NofoundComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    provideAuth(() => getAuth()),
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
