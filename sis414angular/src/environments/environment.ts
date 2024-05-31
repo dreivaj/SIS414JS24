@@ -6,5 +6,6 @@ export const environment = {
         storageBucket: "sis4142024.appspot.com",
         messagingSenderId: "119485614365",
         appId: "1:119485614365:web:8e62a8fca494025efd79f4"
-      }    
+      },
+    production: false      
 };

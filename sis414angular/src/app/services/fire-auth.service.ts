@@ -11,13 +11,14 @@ import {
   sendEmailVerification,
   User
 } from '@angular/fire/auth';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FireAuthService {
 
-  constructor(private auth: Auth) { }
+  constructor(private auth: Auth, private router:Router) { }
 
   register(email:string, pass:string)
   {
@@ -36,11 +37,15 @@ export class FireAuthService {
   }
 
   logout(){
-    return signOut(this.auth).then(result=>{})
+    return signOut(this.auth).then(result=>{
+      this.router.navigate(["login"]);
+    })
   }
 
   googleAuth() {
-    return signInWithPopup(this.auth, new GoogleAuthProvider()).then(result=>{})    
+    return signInWithPopup(this.auth, new GoogleAuthProvider()).then(result=>{
+      this.router.navigate(["lista"]);
+    })    
   }  
 
   currentUser(){

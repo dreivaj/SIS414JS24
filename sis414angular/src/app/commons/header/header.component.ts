@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FireAuthService } from 'src/app/services/fire-auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,8 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   displayTitle:string = "Sis 414 G2 1/2024"
   i:number = 1
+
+  constructor(private auth:FireAuthService){}
   change(){
     this.displayTitle  = this.displayTitle + this.i
     this.i = this.i + 1 
@@ -16,5 +19,9 @@ export class HeaderComponent {
   addItem(event: any) {
     console.log(event)
     this.displayTitle = this.displayTitle + event
+  }
+
+  logout(){
+    this.auth.logout()
   }
 }

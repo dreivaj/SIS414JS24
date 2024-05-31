@@ -32,12 +32,11 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
-  providers: [
+    HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
-    provideAuth(() => getAuth()),
+    provideAuth(() => getAuth()),       
   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
