@@ -1,0 +1,80 @@
+.h-screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414; /* Fondo oscuro */
+  }
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .login-card {
+    background-color: black;
+    padding: 60px 48px;
+    border-radius: 8px;
+    width: 450px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+  }
+  
+  .form-field {
+    margin-bottom: 16px;
+  }
+  
+  .input {
+    background-color: rgb(65, 63, 63);
+    padding: 8px 10px;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 4px;
+  }
+  
+  .action-field {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-btn {
+    background-color: red;
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .DASHBOARD-btn {
+    background-color: #e50914; /* Color rojo de Netflix */
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Relleno del botón */
+    border: none; /* Sin bordes */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+  }
+  
+  .DASHBOARD-btn:hover {
+    background-color: #f40612; /* Color más claro al pasar el mouse */
+  }
