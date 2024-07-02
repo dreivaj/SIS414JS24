@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark bg-dark">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" routerLink="/home">Peliculas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" routerLink="/buscar/hola">buscar</a>
+    </li>
+
+</ul>
+  <a class="navbar-brand" routerLink="/home"> <i class="fas fa-film"></i> Pelis Nelly</a>
+  <form class="form-inline my-2 my-lg-0">
+    <input
+      #txtBuscar
+      class="form-control mr-sm-2"
+      (keyup.enter)="buscarPelicula(txtBuscar.value)"
+      type="search"
+      placeholder="Buscar Pelicula"
+      aria-label="Search"
+    />
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="buscarPelicula(txtBuscar.value)">Buscar</button>
+    <button type="button" class="btn btn-danger" (click)="logOut()">Salir</button>
+
+  </form>
+</nav>
