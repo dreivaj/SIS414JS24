@@ -1,0 +1,17 @@
+function suma(a,b){
+    return a+b
+}
+function tiponumero(a){
+    if(a%2==0){
+        document.writeln("<br>", "par")
+    }else{
+        document.writeln("<br>", "impar")
+    }
+}
+function mifuncion(){
+    let varA= Number(document.getElementById("varA").value)
+    let varB= Number(document.getElementById("varB").value)
+    let varC = document.getElementById("resultado");
+    varC.textContent = suma(varA, varB)
+
+}

@@ -1,0 +1,29 @@
+.contenedor{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightcyan;
+}
+.claculadora{
+    width: 45vh;
+    height: 60vh;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 20PX ;
+    box-shadow: 0 0 50px black;
+}
+button{
+    height: 30pc;
+    width: 70px;
+}
+button:hover{
+    box-shadow: 0 0 20px blue;
+    height: 33px;
+    width: 73px;
+}
+imput{
+    height: 25px;
+    width: 50%;
+}
