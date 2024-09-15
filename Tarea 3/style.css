@@ -1,0 +1,74 @@
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form h2{
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1% 1% 1% 1%;
+}
+#table{
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2% 2% 2% 2%;
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 90%;
+    height: 60%;
+}
+.actions{
+    display: flex;
+    justify-content: center;
+}
+.actions button{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+td, th{
+    border: 1px solid black;
+    padding: 4px;
+}
+
+#inputs{
+    display: flex;
+    justify-content: center;
+}
+#inputs div input{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+#inputs div{
+    width: 30%;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#buttons #send{
+    margin-left: 0%;
+
+}
+#buttons #cancel{
+    margin-left: 20%; 
+}
+
+#users{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#users h2{
+    padding-top: 2%;
+}
