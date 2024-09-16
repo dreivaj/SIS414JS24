@@ -1,0 +1,33 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+#form {
+    margin: 10px auto;
+    padding: 10px;
+    border: solid 1px #000;
+}
+ol > li::marker {
+    font-weight: 800;
+}
+#names {
+    align-self: flex-start;
+}
+.question {
+    font-weight: 800;
+}
+.hint {
+    font-size: 0.9em;
+    margin: 5px 0;
+    padding-left: 5px;
+}
+.textfield {
+    width: 200px;
+    font-size: 0.8em;
+}
