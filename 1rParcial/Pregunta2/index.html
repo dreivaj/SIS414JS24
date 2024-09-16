@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: sans-serif;
+        }
+        #pregunta {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        #opciones {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        #opciones label {
+          display: block;
+          margin-right: 15px;
+          margin-bottom: 5px;
+        }
+        #resultado {
+          font-size: 16px;
+          margin-top: 20px;
+        }
+      </style>
+</head>
+<body>
+    <h1>Preguntas de Naruto</h1>
+    <div id="pregunta"></div>
+        <div id="opciones"></div>
+        <button onclick="verificarRespuesta()">Verificar Respuesta</button>
+    <div id="resultado"></div>
+    
+    <script src="script2.js"></script>
+</body>
+</html>

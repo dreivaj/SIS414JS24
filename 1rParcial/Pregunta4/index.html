@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <h1>PREGUNTA GRUD</h1>
+<main class="r4C">
+    <label>Nombre:</label>
+    <input type="text" placeholder="Nombre" id="name">
+    <label>Descripcion:</label>
+    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+    <div class="buttons">
+        <button type="button" id="btnAdd">Enviar</button>
+    </div>
+</main>
+
+<div class="container">
+
+    <input type="file" class="inputFile" id="fileInp" onchange="getFile(event)" accept="image/png, image/jpg" />
+    <label for="fileInp" class="label"><Strong>SUBA UNA IMAGEN</Strong></label>
+    <span class="fileText"></span>
+    <div class="bar">
+        <div class="progress"></div>
+    </div>
+    <div class="uploadPercentage">0%</div>
+    <div class="imageUploaded">
+        <img alt="" class="img">
+    </div>
+
+</div>
+<br>
+<hr>
+<header>
+    <table>
+    <thead>
+         <tr>
+            <th>N°</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Images</th>
+        </tr>
+        </thead>
+        <tbody id="tableData">
+        </tbody>
+    </table>
+</header>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+    <script src="script4.js"></script> 
+</body>
+</html>
+</body>
+</html>
