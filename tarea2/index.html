@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario - Cultura General de Bolivia</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, #8B4513, #686664, #4d4d4d);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+
+        #cuestionario {
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 400px;
+        }
+
+        h1 {
+            color: #4d4d4d; 
+            text-align: center;
+        }
+
+        .pregunta p {
+            color: #4d4d4d;
+        }
+
+        button {
+            background-color: #8b4513; 
+            border: none;
+            border-radius: 5px;
+            color: #ffffff; 
+            cursor: pointer;
+            display: block;
+            font-size: 16px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #a0522d; 
+        }
+
+        #resultado {
+            margin-top: -1000px;
+            text-align: center;
+            border: 2px solid #4d4d4d; 
+            border-radius: 10px;
+            padding: 100px;
+            background-color: aliceblue;
+        }
+
+        #puntuacion {
+            font-size: 36px;
+            font-weight: bold;
+            color: #8b4513; 
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cuestionario">
+        <h1>Cuestionario - Cultura General de Bolivia</h1>
+        <form id="cuestionarioForm">
+            <div class="pregunta">
+                <p>1. ¿En qué año se fundó Bolivia?</p>
+                <input type="radio" id="respuesta1a" name="respuesta1" value="1825"><label for="respuesta1a">1825 </label><br>
+                <input type="radio" id="respuesta1b" name="respuesta1" value="2003"><label for="respuesta1b">2003</label><br>
+                <input type="radio" id="respuesta1c" name="respuesta1" value="2024"><label for="respuesta1c">2024</label><br>
+                <input type="radio" id="respuesta1d" name="respuesta1" value="1945"><label for="respuesta1d">1945</label>
+            </div>
+            <div class="pregunta">
+                <p>2. ¿Bolivia tiene solo una capital?</p>
+                <input type="radio" id="respuesta2a" name="respuesta2" value="verdadero"><label for="respuesta2a">Verdadero</label><br>
+                <input type="radio" id="respuesta2b" name="respuesta2" value="falso"><label for="respuesta2b">Falso</label>
+            </div>
+
+            <div class="pregunta">
+                <p>3. ¿Cuál es la capital de Bolivia?</p>
+                <input type="radio" id="respuesta3a" name="respuesta3" value="Sucre"><label for="respuesta3a">Sucre </label><br>
+                <input type="radio" id="respuesta3b" name="respuesta3" value="la paz"><label for="respuesta3b">La Paz</label><br>
+                <input type="radio" id="respuesta3c" name="respuesta3" value="oruro"><label for="respuesta3c">Oruro</label>
+            </div>
+
+            <div class="pregunta">
+                <p>4. ¿Quién es el presidente de Bolivia?</p>
+                <input type="radio" id="respuesta4a" name="respuesta4" value="jorge quiroga ramirez"><label for="respuesta4a">Jorge Quiroga Ramírez</label><br>
+                <input type="radio" id="respuesta4b" name="respuesta4" value="evo morales ayma"><label for="respuesta4b">Evo Morales Ayma</label><br>
+                <input type="radio" id="respuesta4c" name="respuesta4" value="Luis Arce Catacora"><label for="respuesta4c">Luis Arce Catacora </label>
+            </div>
+
+            <div class="pregunta">
+                <p>5. Complete la oración: El animal emblemático de Bolivia es el...</p>
+                <input type="text" id="respuesta5" name="respuesta5">
+            </div>
+
+            <div class="pregunta">
+                <p>6. ¿Cuántos departamentos tiene Bolivia?</p>
+                <input type="radio" id="respuesta6a" name="respuesta6" value="10"><label for="respuesta6a">10</label><br>
+                <input type="radio" id="respuesta6b" name="respuesta6" value="9"><label for="respuesta6b">9</label><br>
+                <input type="radio" id="respuesta6c" name="respuesta6" value="8"><label for="respuesta6c">8</label><br>
+                <input type="radio" id="respuesta6d" name="respuesta6" value="7"><label for="respuesta6d">7</label>
+            </div>
+
+            <div class="pregunta">
+                <p>7. ¿Bolivia tiene como danza cultural la salsa?</p>
+                <input type="radio" id="respuesta7a" name="respuesta7" value="verdadero"><label for="respuesta7a">Verdadero</label><br>
+                <input type="radio" id="respuesta7b" name="respuesta7" value="falso"><label for="respuesta7b">Falso</label>
+            </div>
+
+            <div class="pregunta">
+                <p>8. Según la constitución política del estado, ¿cuál es el nombre oficial de Bolivia?</p>
+                <input type="radio" id="respuesta8a" name="respuesta8" value="Estado Plurinacional de Bolivia"><label for="respuesta8a">Estado Plurinacional de Bolivia</label><br>
+                <input type="radio" id="respuesta8b" name="respuesta8" value="republica democratica de bolivia"><label for="respuesta8b">República Democrática de Bolivia</label><br>
+                <input type="radio" id="respuesta8c" name="respuesta8" value="estado indigenista de bolivia"><label for="respuesta8c">Estado Indigenista de Bolivia</label><br>
+                <input type="radio" id="respuesta8d" name="respuesta8" value="republica plurinacional de bolivia"><label for="respuesta8d">República Plurinacional de Bolivia</label>
+            </div>
+
+            <div class="pregunta">
+                <p>9. Complete la frase: Morir antes que...</p>
+                <input type="text" id="respuesta9" name="respuesta9"> <span>vivir.</span>
+            </div>
+
+            <div class="pregunta">
+                <p>10. Seleccione 2 departamentos de Bolivia:</p>
+                <input type="checkbox" id="respuesta10a" name="respuesta10" value="el alto"><label for="respuesta10a">El Alto</label><br>
+                <input type="checkbox" id="respuesta10b" name="respuesta10" value="trinidad"><label for="respuesta10b">Trinidad</label><br>
+                <input type="checkbox" id="respuesta10c" name="respuesta10" value="Pando"><label for="respuesta10c">Pando </label><br>
+                <input type="checkbox" id="respuesta10d" name="respuesta10" value="san luis potosi"><label for="respuesta10d">San Luis Potosí</label><br>
+                <input type="checkbox" id="respuesta10e" name="respuesta10" value="Beni"><label for="respuesta10e">Beni </label><br>
+            </div>
+            
+            <button type="button" onclick="calcularPuntuacion()">Enviar cuestionario</button>
+           <small> <p>MARIO JV</p></small>
+        </form>
+    </div>
+    <br>
+  
+    
+
+    <div id="resultado"></div>
+
+    <script src="scrip.js"></script>
+    
+</body>
+</html>
