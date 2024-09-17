@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+</head>
+<body>
+    <h1><center> 10 PREGUNTAS DE CULTURA GENERAL</center></h1>
+    <label>1-Cual es el pais mas grande del mundo en terminos de area</label>
+    <br>
+    <input type="radio" name="p1" value="5">Rusia
+    <input type="radio" name="p1"value="0">Alemania
+    <input type="radio" name="p1"value="0">Brasil
+
+    <br>
+    <label>2-COMPLTE LA SIGUI. FRACE</label>
+    <p>mas sabe el<input type="text" id="p2">por viejo q por </p>
+
+    <br>
+    <label>3-Resta</label>
+    <p>100 - 3 =<input type="number" id="P3"><br></p>
+
+    <label>4-Cantos dias tiene una semana</label>
+    <select name="" id="p4">
+        <option value="opcion_incorrecta">8 dias</option>
+        <option value="opcion_incorrecta">9 dias</option>
+        <option value="opcion_correcta">7 dias</option>
+        <option value="opcion_incorrecta">6 dias</option>
+    </select><br>
+
+    <label>5-Cual no pertenece </label><br>
+    <br>
+    <input type="checkbox" name="p5" value="0">GUITARRA<br>
+    <input type="checkbox"name="p5" value="0">TROMPETA<br>
+    <input type="checkbox" name="p5" value="5">CUERDA<br>
+    <input type="checkbox"name="p5" value="0">TAMBOR<br>
+    <input type="checkbox"name="p5" value="0">XILOFONO<br>
+
+    <label>5-Que Fecha es el dia de la mujer </label><br>
+    <br>
+    <input type="date" name="p6" value="08/03/2024"><br>
+
+    <label>7-Cual es el oceano mas grande del mundo</label>
+    <br>
+    <input type="radio" name="p7" value="0">Oceano Pacifico
+    <input type="radio" name="p7"value="0">Oceano Atlantico
+    <input type="radio" name="p7"value="5">Oceano Artico
+
+    <br>
+
+
+    <label>8-Cual es el animal conocido como el "rey de la selva"</label>
+    <br>
+    <input type="radio" name="p8" value="0">Tigre
+    <input type="radio" name="p8"value="5">Leon
+    <input type="radio" name="p8"value="0">Jaguar
+    <input type="radio" name="p8"value="0">Elefante
+
+    <br>
+    <label>9-El hombre llego por primera vez al año:</label>
+    <br>
+    <input type="radio" name="p8" value="0">1970
+    <input type="radio" name="p8"value="5">1969
+    <input type="radio" name="p8"value="0">1965
+    <input type="radio" name="p8"value="0">1980
+
+    <br>
+    <label>10-El autor de la obra "Don Quijote de la mancha":</label>
+    <br>
+    <input type="radio" name="p8" value="0">Alonso Fernandez de Avellaneda
+    <input type="radio" name="p8"value="5">Miguel de Cervantes
+    <input type="radio" name="p8"value="0">Jeronimo de Pasamonte 
+    <input type="radio" name="p8"value="0">Lope de Vega
+
+    <br>
+    <button onclick="calcular()">enviar</button>
+    <label id="result"></label>
+    <script src="./js/java.js"></script>
+</body>
+</html>
