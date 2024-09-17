@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <label><strong>Elige la opcion correcta: </strong></label>
+        <label><strong>Que personas fueron a la Luna?</strong></label><br><br>
+        <input type="checkbox" name="r1" value="50">Neil Armstrong
+        <input type="checkbox" name="r1" value="50">Buzz Aldrin
+        <input type="checkbox" name="r1" value="-10">Isaac Newton
+        <input type="checkbox" name="r1" value="-10">David Scott
+        <input type="checkbox" name="r1" value="-10">James B. Irwin
+        <br><br>
+        <button onclick="calcular()">enviar</button> <br>
+        <label id="result"></label>
+    </main><br>
+    <hr><br>
+
+    <button onclick="addRows()">Add Rows</button>
+    <table>
+        <thead>
+            <th>id</th>
+            <th>Name</th>
+            <th>lastName</th>
+            <th>numberPhone</th>
+        </thead>
+        <tbody id="bodyTable">
+
+        </tbody>
+    </table>
+
+    <h1>Pregunta Cuatro</h1>
+    <main class="r4C">
+        <label>Nombre:</label>
+        <input type="text" placeholder="Nombre" id="name">
+        <label>Descripcion:</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <div class="buttons">
+            <button type="button" id="btnAdd">Enviar</button>
+        </div>
+    </main>
+    
+    <div class="container">
+
+        <input type="file" class="inputFile" id="fileInp" onchange="getFile(event)" accept="image/png, image/jpg" />
+        <label for="fileInp" class="label"><Strong>AÑADE UNA IMAGEN PRIMERO</Strong></label>
+        <span class="fileText"></span>
+        
+        <div class="bar">
+            <div class="progress"></div>
+        </div>
+        <div class="uploadPercentage">0%</div>
+        <div class="imageUploaded">
+            <img alt="" class="img">
+        </div>
+
+    </div>
+    <br>
+    <hr>
+    <header>
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Images</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+    
+            </tbody>
+        </table>
+    </header>
+    
+
+
+
+
+        <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+        <script src="main.js"></script> 
+</body>
+
+</html>
