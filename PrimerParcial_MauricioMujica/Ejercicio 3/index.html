@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila</title>
+</head>
+
+<body>
+    <table>
+    <tr>
+        <th>Fila Uno</th>
+        <th>Fila Dos</th>
+    </tr>
+    </table>
+
+<table id="tblDatos" border="1">
+      <tr>
+            <td>Fila Uno</td>
+            <td>Fila Dos</td>
+            
+            </tr>
+        <tr>
+            <td>Fila Uno</td>
+            <td>Fila Dos</td>
+           </tr>
+       
+    </table>
+    <input type="button" onclick="insertarFila()" value="Insertar fila">
+
+    <script>
+        function insertarFila() {
+            let tblDatos = document.getElementById('tblDatos').insertRow(0);
+            let col1 = tblDatos.insertCell(0);
+            let col2 = tblDatos.insertCell(1);
+            let col3 = tblDatos.insertCell(2);
+            col1.innerHTML = 'Fila Uno';
+            col2.innerHTML = 'Fila Dos';
+            
+        }
+    </script>
+</body>
+
+</html>
+
